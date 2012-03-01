@@ -1,4 +1,4 @@
-Starbuzz Coffee Beverages
+﻿Starbuzz Coffee Beverages
 
 House Blend, $1.49
 A smooth, mild blend of coffees from Mexico, Bolivia and Guatemala.
@@ -11,3 +11,13 @@ A mixture of espresso, steamed milk and milk foam.
 
 Chai Tea, $1.85
 A spicy drink made with black tea, spices, milk and honey.
+
+------------------------------------------
+
+function greeting(){
+	var userName = prompt("請問你的大名是?", "請在此輸入名字");
+	if(userName){
+		alert(userName + ", 很高興見到你!");
+		document.getElementById("waiterImg").src = "waiter2.jpg";
+	}
+}

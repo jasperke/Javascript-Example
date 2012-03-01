@@ -1,5 +1,6 @@
-<html>
+﻿<html>
 <head>
+<meta charset="utf-8">
 <title>Starbuzz Coffee</title>
 <style type="text/css">
 body{
@@ -11,6 +12,15 @@ body{
 	font-family: sans-serif;
 }
 </style>
+<script>
+function greeting(){
+	var userName = prompt("請問你的大名是?", "請在此輸入名字");
+	if(userName){
+		alert(userName + ", 很高興見到你!");
+		document.getElementById("waiterImg").src = "waiter2.jpg";
+	}
+}
+</script>
 </head>
 
 <body>
@@ -28,6 +38,6 @@ body{
 <h2>Chai Tea, $1.85</h2>
 <p>A spicy drink made with black tea, spices, milk and honey.</p>
 
-<img src="waiter.png">
+<img src="waiter.png" id="waiterImg" onclick="greeting();">
 </body>
 </html>
